@@ -26,7 +26,7 @@ impl Token {
 
 impl fmt::Display for Token{
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "Transaction Hash: {:?}\nContract Address: {:?}\nToken Name: {}\nSTotal Supply: {}", self.hash, self.address, self.name, self.supply)
+        write!(f, "Transaction Hash: {:?}\nContract Address: {:?}\nToken Name: {}\nTotal Supply: {}\n", self.hash, self.address, self.name, self.supply)
     }
 }
 
